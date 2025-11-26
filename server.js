@@ -19,10 +19,10 @@ app.get("/search", (req, res) => {
 });
 
 app.post("/submit", (req, res) => {
-  const v1 = Number(req.body.value1);
-  const v2 = Number(req.body.value2);
+  const t1 = Number(req.body.value1);
+  const t2 = Number(req.body.value2);
 
-  const r1 = v1 % v2;
+  const r1 = t1 % t2;
   
   res.render("post_result", { r1, v1, v2 });
 });
