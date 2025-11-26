@@ -23,7 +23,7 @@ app.post("/submit-form", (req, res) => {
   const v2 = Number(req.body.value2);
 
   const r1 = v1 % v2;
-  res.render("form_result", { r1, v1, v2 });
+  res.render("post_result", { r1, v1, v2 });
 });
 
 app.get("/api/data", (req, res) => {
