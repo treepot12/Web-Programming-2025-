@@ -14,7 +14,7 @@ app.get("/", (req, res) => { res.render("index"); });
 
 app.get("/search", (req, res) => {
   const query = req.query.q || "";
-  res.render("get_result", { q });
+  res.render("get_result", { query });
 });
 
 app.post("/submit", (req, res) => {
